@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Synapse Personal Local：把 AI 对话整理成可审核、可追溯的个人知识。"
+    >
+    <title>Synapse Personal Local · 让知识留下来</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Synapse 首页">
+        <img src="./brand/synapse-mark.svg" alt="" width="46" height="46">
+        <span>
+          <small>PERSONAL KNOWLEDGE COMPILER</small>
+          <strong>Synapse</strong>
+        </span>
+      </a>
+      <nav aria-label="公开页面导航">
+        <a href="#workflow">怎样工作</a>
+        <a href="#privacy">本地与隐私</a>
+        <a href="#first-run">开始使用</a>
+        <a href="#availability">发布状态</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="status-kicker"><span></span> Personal Local · 工程预览</p>
+          <h1 id="hero-title">让一次 AI 对话，<br>长成可追溯的知识。</h1>
+          <p class="hero-lede">
+            Synapse 保存已经完成的问答，再由你决定把它整理成正式知识、学习题目或项目记录。
+            原始内容不被悄悄改写，每一步都能回到来源。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#workflow">了解工作方式</a>
+            <a class="secondary-link" href="#availability">查看发布状态</a>
+          </div>
+          <ul class="hero-facts" aria-label="产品边界摘要">
+            <li>原始问答留在本机</li>
+            <li>AI 配置完全可选</li>
+            <li>外发前逐次核对</li>
+          </ul>
+        </div>
+
+        <div class="product-window" aria-label="Synapse 知识整理流程示意">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <strong>机器学习 · 知识库</strong>
+            <span class="local-pill">本机</span>
+          </div>
+          <div class="window-body">
+            <div class="source-rail">
+              <p class="mini-label">来源</p>
+              <article class="source-card active">
+                <span>01</span>
+                <div>
+                  <strong>监督学习与分类</strong>
+                  <small>原始问答 · 已保存</small>
+                </div>
+              </article>
+              <article class="source-card">
+                <span>02</span>
+                <div>
+                  <strong>无监督学习</strong>
+                  <small>原始问答 · 已保存</small>
+                </div>
+              </article>
+              <article class="source-card">
+                <span>03</span>
+                <div>
+                  <strong>强化学习</strong>
+                  <small>等待选择去向</small>
+                </div>
+              </article>
+            </div>
+            <article class="knowledge-sheet">
+              <p class="mini-label">正式知识</p>
+              <span class="trace-badge">1 个可追溯来源</span>
+              <h2>机器学习分类体系</h2>
+              <p>
+                监督学习从带标签的数据中学习规律，适合分类和回归；无监督学习从无标签数据中发现结构。
+              </p>
+              <div class="concept-grid">
+                <span>监督学习</span><span>无监督学习</span><span>强化学习</span>
+              </div>
+              <div class="source-link"><b>↗</b> 查看保存的原始问题与最终回答</div>
+            </article>
+          </div>
+          <div class="destination-bar" aria-label="三种整理去向">
+            <span><b>知识</b> 阅读与连接</span>
+            <span><b>题目</b> 练习与复习</span>
+            <span><b>项目</b> 进展与证据</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="当前支持范围">
+        <div><strong>4</strong><span>个已支持对话平台</span></div>
+        <div><strong>本地优先</strong><span>SQLite 与加密备份</span></div>
+        <div><strong>可逆</strong><span>审核、回收与恢复</span></div>
+        <div><strong>可追溯</strong><span>知识始终连接来源</span></div>
+      </section>
+
+      <section id="workflow" class="section-block workflow-section">
+        <div class="section-intro">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>先保存，再决定知识该去哪里。</h2>
+          <p>Synapse 不把每段回答自动塞进一个黑盒。原始问答、AI 草稿和正式内容分别保留。</p>
+        </div>
+        <div class="step-grid">
+          <article>
+            <span class="step-number">01</span>
+            <h3>保存完整问答</h3>
+            <p>在支持的 AI 对话页面保存最近一轮或连续多轮。问题、最终回答和所选图片作为来源保留。</p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>核对并选择去向</h3>
+            <p>继续留作原始问答，或整理为正式知识、题目、项目更新。任何 AI 外发都先显示实际发送内容。</p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>形成可回溯成果</h3>
+            <p>阅读、练习或推进项目时都能回到原始问答；草稿可以拒绝，已写入内容也有撤回路径。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block destinations-section" aria-labelledby="destinations-title">
+        <div class="section-intro compact">
+          <p class="eyebrow">ONE SOURCE, THREE DIRECTIONS</p>
+          <h2 id="destinations-title">同一份来源，服务三种真实任务。</h2>
+        </div>
+        <div class="destination-grid">
+          <article class="destination-card knowledge-card">
+            <span class="card-icon" aria-hidden="true">知</span>
+            <p class="mini-label">正式知识</p>
+            <h3>把零散回答编成可以继续阅读的体系</h3>
+            <p>主题、概念、要点、示例和来源保持连接；支持本地搜索、关系图、闪卡与导出。</p>
+            <ul><li>结构化阅读</li><li>来源核验</li><li>版本撤回</li></ul>
+          </article>
+          <article class="destination-card exercise-card">
+            <span class="card-icon" aria-hidden="true">练</span>
+            <p class="mini-label">学习题库</p>
+            <h3>把理解转成可复习、可验证的练习</h3>
+            <p>题目草稿经过审核才进入题集，练习历史和本地确定性判定不会依赖在线模型。</p>
+            <ul><li>题目审核</li><li>间隔复习</li><li>学习分析</li></ul>
+          </article>
+          <article class="destination-card project-card">
+            <span class="card-icon" aria-hidden="true">项</span>
+            <p class="mini-label">项目档案</p>
+            <h3>让决策、证据和下一步留在同一条时间线上</h3>
+            <p>保存项目范围、检查点、来源证据和待解决问题，生成可交接但不篡改事实的项目摘要。</p>
+            <ul><li>项目时间线</li><li>证据关系</li><li>交接摘要</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="privacy" class="section-block privacy-section">
+        <div class="privacy-copy">
+          <p class="eyebrow">LOCAL BY DEFAULT</p>
+          <h2>模型是工具，不是进入知识库的门票。</h2>
+          <p>
+            不配置任何模型，也可以保存和查看原始问答、管理知识库、搜索已有内容、练习、维护项目，
+            以及导入导出加密备份。
+          </p>
+          <div class="privacy-note">
+            <strong>需要 AI 时再连接</strong>
+            <span>Preview 中的 BYOK 模型配置属于实验性能力；整理、图片识别、AI 评分或远程语义检索会先显示提供商、模型、文字、图片和排除内容。连接测试通过不代表该模型已获发行级验证。</span>
+          </div>
+        </div>
+        <div class="boundary-card">
+          <p class="mini-label">一次外发的边界</p>
+          <div class="boundary-row"><span>发送到</span><strong>你选择的模型配置</strong></div>
+          <div class="boundary-row"><span>包含</span><strong>本次核对过的文字 / 图片</strong></div>
+          <div class="boundary-row"><span>不包含</span><strong>API Key、完整知识库、无关记录</strong></div>
+          <div class="boundary-row"><span>取消</span><strong>不发送，也不生成不完整草稿</strong></div>
+        </div>
+      </section>
+
+      <section id="availability" class="section-block availability-section" data-release-status="engineering-preview">
+        <div class="availability-copy">
+          <p class="eyebrow">RELEASE STATUS</p>
+          <h2>公开下载尚未开放</h2>
+          <p>
+            Preview 0.1.0 r1 候选已固定，PG-1 定向技术审查未发现阻断缺陷；
+            HTTPS 下载部署与最终发布批准尚未完成，公开下载暂未开放。正式签名版和自动更新也尚未开放。
+          </p>
+          <aside role="note">
+            页面不会提供虚构下载。未签名 Preview 须先完成实际下载摘要、页面与系统兼容核对并获得发布批准；
+            Windows 可能警告或阻止安装。正式版另须完成公众可信的代码签名审计。
+          </aside>
+        </div>
+        <div class="release-card" aria-label="未来候选包信息">
+          <div class="release-card-heading">
+            <span>Windows Personal Local</span>
+            <strong>Preview 0.1.0 r1 · 待放行</strong>
+          </div>
+          <dl>
+            <div><dt>候选版本</dt><dd>Preview 0.1.0 r1（手动安装）</dd></div>
+            <div><dt>支持平台</dt><dd>Windows x64；完整系统兼容性待 Preview 反馈验证</dd></div>
+            <div><dt>文件大小</dt><dd>141,212,757 字节</dd></div>
+            <div><dt>SHA-256</dt><dd><code>72e7d9378cb9bb9f73c64cedbbdf657c864ed651a4a409719fdb53bb836ead05</code></dd></div>
+            <div><dt>代码签名</dt><dd>本 Preview 未签名；正式版另行审计</dd></div>
+            <div><dt>发布说明</dt><dd><a href="./preview-0.1.0-r1.html">阅读候选版说明与安装步骤</a></dd></div>
+          </dl>
+          <span class="disabled-download" aria-disabled="true">下载将在候选包通过后开放</span>
+        </div>
+      </section>
+
+      <section id="first-run" class="section-block start-section" aria-labelledby="start-title">
+        <div class="section-intro compact">
+          <p class="eyebrow">FIRST RUN</p>
+          <h2 id="start-title">未来安装版的第一次使用，会从这四件事开始。</h2>
+        </div>
+        <ol>
+          <li><span>1</span><div><strong>确认本地服务</strong><p>安装版负责连接本机服务；工程预览仍按仓库说明启动。</p></div></li>
+          <li><span>2</span><div><strong>创建知识库</strong><p>为学习、研究或项目建立知识库，并在个人空间查看正式知识。</p></div></li>
+          <li><span>3</span><div><strong>保存第一轮问答</strong><p>等待回答完成，再从浏览器侧栏核对并保存。</p></div></li>
+          <li><span>4</span><div><strong>按需配置 AI（实验性）</strong><p>不配置也能使用本地功能；需要整理时可自行配置并测试模型，核对每次外发。</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand">
+        <img src="./brand/synapse-mark.svg" alt="" width="38" height="38">
+        <span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span>
+      </div>
+      <p>工程预览 · <a href="./preview-0.1.0-r1.html">阅读 Preview 候选版说明</a></p>
+    </footer>
+  </body>
+</html>

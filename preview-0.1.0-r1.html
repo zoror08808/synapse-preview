@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Synapse Personal Local Preview 0.1.0 r1 候选版说明、校验摘要、安装步骤与已知限制。">
+    <title>Preview 0.1.0 r1 候选版说明 · Synapse</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html#top" aria-label="返回 Synapse 首页">
+        <img src="./brand/synapse-mark.svg" alt="" width="46" height="46">
+        <span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span>
+      </a>
+      <nav aria-label="候选版说明导航">
+        <a href="./index.html#availability">发布状态</a>
+        <a href="#install">安装步骤</a>
+        <a href="#limits">已知限制</a>
+      </nav>
+    </header>
+
+    <main class="release-notes" id="top">
+      <p class="eyebrow">RELEASE NOTES · WINDOWS X64</p>
+      <h1>Preview 0.1.0 r1</h1>
+      <p class="release-notes-lede">Synapse Personal Local 手动渠道候选版。<strong>公开下载尚未开放。</strong> 此页先供核对发行内容；只有部署、下载字节复核和发布批准完成后，才会开放下载。</p>
+
+      <section aria-labelledby="release-overview">
+        <h2 id="release-overview">候选包与校验</h2>
+        <p>总包文件名：<code>synapse-personal-local-preview-0.1.0-r1-manual.zip</code>；大小：141,212,757 字节。安装器、本地服务和扩展显示的版本为 0.1.0，r1 是本次手动发行标识。</p>
+        <div class="release-hash"><span>总包 SHA-256</span><code>72e7d9378cb9bb9f73c64cedbbdf657c864ed651a4a409719fdb53bb836ead05</code></div>
+        <p>Windows 包没有公众可信的代码签名。SHA-256 用来检查下载字节是否与此页一致，不能证明发布者身份；Windows 或组织策略可能警告或阻止安装。请勿为安装而关闭系统防护。</p>
+      </section>
+
+      <section aria-labelledby="release-support">
+        <h2 id="release-support">本次支持范围</h2>
+        <ul>
+          <li>在本机保存原始网页问答、建立知识库，以及使用本地知识、学习和项目工作流。网页采集覆盖已审查的 ChatGPT、DeepSeek、Gemini 和豆包页面；网站改版可能影响采集。</li>
+          <li>用户主动发起安装、同版本更新和修复。普通卸载默认保留个人数据；彻底删除须另行确认。加密备份可导入为独立恢复副本。</li>
+          <li>Chrome 与 Edge 使用包内手动加载扩展，扩展 ID 为 <code>dmcigdjlmodfnfcllndnpgcaionnelaa</code>。这不是浏览器商店版，不会由商店自动更新。</li>
+        </ul>
+      </section>
+
+      <section id="limits" aria-labelledby="release-limits">
+        <h2 id="release-limits">实验性能力与已知限制</h2>
+        <ul>
+          <li>内置及自定义 BYOK 模型配置均为<strong>实验性</strong>。连接测试只验证当时的账户与配置；九个内置能力的多账户、地区、额度与完整工作流矩阵尚未完成发行级验收。无需配置 AI 即可使用本地功能；主动使用 AI 时请核对每次外发目标和内容。</li>
+          <li>没有自动更新。完整 Windows 版本、代理／VPN、磁盘满、防病毒干扰和所有硬件组合未逐一实机验证；组织策略可能阻止安装。更新和修复时请保留与当前安装批次匹配的原材料。</li>
+          <li>受影响视图经过定向无障碍和性能检查；这不等于完整 WCAG 认证。</li>
+        </ul>
+      </section>
+
+      <section id="install" aria-labelledby="release-install">
+        <h2 id="release-install">下载开放后的安装步骤</h2>
+        <ol>
+          <li>从本网站届时提供的 HTTPS 链接取得总包。用 PowerShell 的 <code>Get-FileHash -Algorithm SHA256 -LiteralPath '下载的文件路径'</code> 与上方总包摘要核对；不符即停止。</li>
+          <li>将总包解压到新目录，再将其中 <code>desktop/preview-desktop.zip</code> 解压为独立的 <code>distribution</code> 目录。双击 <code>distribution/manager/Synapse Setup.exe</code>，选择该 <code>distribution</code> 目录，输入下表的程序包和配对记录摘要。浏览器扩展选择总包内手动扩展 ZIP，输入扩展摘要；Chrome／Edge ID 由包读取。</li>
+          <li>核对程序位置、个人数据位置、安装方式和未签名提示。安装后分别解压 Chrome／Edge 扩展 ZIP，在浏览器扩展页开启开发者模式并加载已解压扩展，从侧栏确认本地服务已连接。切换旧扩展前，先同步其中尚未同步的原始记录。</li>
+        </ol>
+        <div class="release-table-wrap">
+          <table>
+            <caption>安装页填写的 SHA-256 摘要</caption>
+            <thead><tr><th scope="col">对象</th><th scope="col">SHA-256</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">桌面程序包</th><td><code>91442681d9d2cc8b665e8dd429844f9430f66e890ab590b947f0f78f1cfbef7a</code></td></tr>
+              <tr><th scope="row">桌面配对记录</th><td><code>5e85963144252d8696e98780a4da0f963a6444d9aaf79af62330dd86f222f247</code></td></tr>
+              <tr><th scope="row">Chrome／Edge 手动扩展 ZIP</th><td><code>9aae682f75171b9b637da9342c6f838110f058c8833fa4c26820fe8ec2d7f879</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="release-sources">
+        <h2 id="release-sources">第三方通知与源码</h2>
+        <p>扩展包内有 <code>THIRD-PARTY-NOTICES.txt</code>；桌面发行目录和管理器各有第三方通知、SBOM 与许可证文本。扩展中的 DOMPurify 3.4.17 按 Apache-2.0 双许可选项使用。</p>
+        <p>随包提供 <code>THIRD-PARTY-SOURCES/certifi-2026.7.22.tar.gz</code> 的 MPL-2.0 覆盖源码（SHA-256：<code>741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55</code>），以及 <code>sources/pystray-v0.19.5-upstream.zip</code> 的 LGPLv3 上游源码、许可文本和替换说明（SHA-256：<code>99fb0f7ec3a551e6c96d3946ecfce0e9dc04bac7994fa64ae348921a634af70e</code>）。保留同一批次总包，以便后续修复和取得源码。</p>
+      </section>
+      <p class="release-notes-end"><a href="./index.html#availability">返回发布状态</a></p>
+    </main>
+    <footer>
+      <div class="brand footer-brand"><img src="./brand/synapse-mark.svg" alt="" width="38" height="38"><span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span></div>
+      <p>Preview 0.1.0 r1 · 候选版说明</p>
+    </footer>
+  </body>
+</html>
