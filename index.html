@@ -30,7 +30,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="status-kicker"><span></span> Personal Local · 工程预览</p>
+          <p class="status-kicker"><span></span> Personal Local · 公开预览</p>
           <h1 id="hero-title">让一次 AI 对话，<br>长成可追溯的知识。</h1>
           <p class="hero-lede">
             Synapse 保存已经完成的问答，再由你决定把它整理成正式知识、学习题目或项目记录。
@@ -183,43 +183,43 @@
         </div>
       </section>
 
-      <section id="availability" class="section-block availability-section" data-release-status="engineering-preview">
+      <section id="availability" class="section-block availability-section" data-release-status="public-preview">
         <div class="availability-copy">
           <p class="eyebrow">RELEASE STATUS</p>
-          <h2>公开下载尚未开放</h2>
+          <h2>Preview 0.1.0 r1 已开放下载</h2>
           <p>
-            Preview 0.1.0 r1 候选已固定，PG-1 定向技术审查未发现阻断缺陷；
-            HTTPS 下载部署与最终发布批准尚未完成，公开下载暂未开放。正式签名版和自动更新也尚未开放。
+            Preview 0.1.0 r1 现提供 Windows x64 手动安装包。请先阅读发行说明并核对下载文件摘要。
+            本次为有限支持范围的未签名预览版；正式签名版和自动更新尚未开放。
           </p>
           <aside role="note">
-            页面不会提供虚构下载。未签名 Preview 须先完成实际下载摘要、页面与系统兼容核对并获得发布批准；
-            Windows 可能警告或阻止安装。正式版另须完成公众可信的代码签名审计。
+            SHA-256 只能核对下载字节，不能认证发布者。本 Preview 没有公众可信的代码签名，
+            Windows 或组织策略可能警告或阻止安装；不要为安装而关闭系统防护。
           </aside>
         </div>
-        <div class="release-card" aria-label="未来候选包信息">
+        <div class="release-card" aria-label="Preview 0.1.0 r1 发行包信息">
           <div class="release-card-heading">
             <span>Windows Personal Local</span>
-            <strong>Preview 0.1.0 r1 · 待放行</strong>
+            <strong>Preview 0.1.0 r1 · 手动下载</strong>
           </div>
           <dl>
-            <div><dt>候选版本</dt><dd>Preview 0.1.0 r1（手动安装）</dd></div>
+            <div><dt>发行版本</dt><dd>Preview 0.1.0 r1（手动安装）</dd></div>
             <div><dt>支持平台</dt><dd>Windows x64；完整系统兼容性待 Preview 反馈验证</dd></div>
             <div><dt>文件大小</dt><dd>141,212,757 字节</dd></div>
             <div><dt>SHA-256</dt><dd><code>72e7d9378cb9bb9f73c64cedbbdf657c864ed651a4a409719fdb53bb836ead05</code></dd></div>
             <div><dt>代码签名</dt><dd>本 Preview 未签名；正式版另行审计</dd></div>
-            <div><dt>发布说明</dt><dd><a href="./preview-0.1.0-r1.html">阅读候选版说明与安装步骤</a></dd></div>
+            <div><dt>发布说明</dt><dd><a href="./preview-0.1.0-r1.html">阅读发行说明与安装步骤</a></dd></div>
           </dl>
-          <span class="disabled-download" aria-disabled="true">下载将在候选包通过后开放</span>
+          <a class="release-download" href="https://github.com/zoror08808/synapse-preview/releases/download/preview-0.1.0-r1/synapse-personal-local-preview-0.1.0-r1-manual.zip">下载 Windows x64 手动发行包（134.67 MiB）</a>
         </div>
       </section>
 
       <section id="first-run" class="section-block start-section" aria-labelledby="start-title">
         <div class="section-intro compact">
           <p class="eyebrow">FIRST RUN</p>
-          <h2 id="start-title">未来安装版的第一次使用，会从这四件事开始。</h2>
+          <h2 id="start-title">第一次使用，从这四件事开始。</h2>
         </div>
         <ol>
-          <li><span>1</span><div><strong>确认本地服务</strong><p>安装版负责连接本机服务；工程预览仍按仓库说明启动。</p></div></li>
+          <li><span>1</span><div><strong>确认本地服务</strong><p>安装后启动 Synapse，并确认浏览器侧栏显示本地服务已连接。</p></div></li>
           <li><span>2</span><div><strong>创建知识库</strong><p>为学习、研究或项目建立知识库，并在个人空间查看正式知识。</p></div></li>
           <li><span>3</span><div><strong>保存第一轮问答</strong><p>等待回答完成，再从浏览器侧栏核对并保存。</p></div></li>
           <li><span>4</span><div><strong>按需配置 AI（实验性）</strong><p>不配置也能使用本地功能；需要整理时可自行配置并测试模型，核对每次外发。</p></div></li>
@@ -232,7 +232,7 @@
         <img src="./brand/synapse-mark.svg" alt="" width="38" height="38">
         <span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span>
       </div>
-      <p>工程预览 · <a href="./preview-0.1.0-r1.html">阅读 Preview 候选版说明</a></p>
+      <p>公开预览 · <a href="./preview-0.1.0-r1.html">阅读 Preview 0.1.0 r1 说明</a></p>
     </footer>
   </body>
 </html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Synapse Personal Local Preview 0.1.0 r1 候选版说明、校验摘要、安装步骤与已知限制。">
-    <title>Preview 0.1.0 r1 候选版说明 · Synapse</title>
+    <meta name="description" content="Synapse Personal Local Preview 0.1.0 r1 发行说明、校验摘要、安装步骤与已知限制。">
+    <title>Preview 0.1.0 r1 发行说明 · Synapse</title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -13,7 +13,7 @@
         <img src="./brand/synapse-mark.svg" alt="" width="46" height="46">
         <span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span>
       </a>
-      <nav aria-label="候选版说明导航">
+      <nav aria-label="发行说明导航">
         <a href="./index.html#availability">发布状态</a>
         <a href="#install">安装步骤</a>
         <a href="#limits">已知限制</a>
@@ -23,10 +23,10 @@
     <main class="release-notes" id="top">
       <p class="eyebrow">RELEASE NOTES · WINDOWS X64</p>
       <h1>Preview 0.1.0 r1</h1>
-      <p class="release-notes-lede">Synapse Personal Local 手动渠道候选版。<strong>公开下载尚未开放。</strong> 此页先供核对发行内容；只有部署、下载字节复核和发布批准完成后，才会开放下载。</p>
+      <p class="release-notes-lede">Synapse Personal Local 手动安装预览版。下载前请阅读支持范围、已知限制和校验方式。</p>
 
       <section aria-labelledby="release-overview">
-        <h2 id="release-overview">候选包与校验</h2>
+        <h2 id="release-overview">发行包与校验</h2>
         <p>总包文件名：<code>synapse-personal-local-preview-0.1.0-r1-manual.zip</code>；大小：141,212,757 字节。安装器、本地服务和扩展显示的版本为 0.1.0，r1 是本次手动发行标识。</p>
         <div class="release-hash"><span>总包 SHA-256</span><code>72e7d9378cb9bb9f73c64cedbbdf657c864ed651a4a409719fdb53bb836ead05</code></div>
         <p>Windows 包没有公众可信的代码签名。SHA-256 用来检查下载字节是否与此页一致，不能证明发布者身份；Windows 或组织策略可能警告或阻止安装。请勿为安装而关闭系统防护。</p>
@@ -51,9 +51,9 @@
       </section>
 
       <section id="install" aria-labelledby="release-install">
-        <h2 id="release-install">下载开放后的安装步骤</h2>
+        <h2 id="release-install">安装步骤</h2>
         <ol>
-          <li>从本网站届时提供的 HTTPS 链接取得总包。用 PowerShell 的 <code>Get-FileHash -Algorithm SHA256 -LiteralPath '下载的文件路径'</code> 与上方总包摘要核对；不符即停止。</li>
+          <li>从 <a href="https://github.com/zoror08808/synapse-preview/releases/download/preview-0.1.0-r1/synapse-personal-local-preview-0.1.0-r1-manual.zip">GitHub Release 下载 Windows x64 手动发行包</a>。用 PowerShell 的 <code>Get-FileHash -Algorithm SHA256 -LiteralPath '下载的文件路径'</code> 与上方总包摘要核对；不符即停止。</li>
           <li>将总包解压到新目录，再将其中 <code>desktop/preview-desktop.zip</code> 解压为独立的 <code>distribution</code> 目录。双击 <code>distribution/manager/Synapse Setup.exe</code>，选择该 <code>distribution</code> 目录，输入下表的程序包和配对记录摘要。浏览器扩展选择总包内手动扩展 ZIP，输入扩展摘要；Chrome／Edge ID 由包读取。</li>
           <li>核对程序位置、个人数据位置、安装方式和未签名提示。安装后分别解压 Chrome／Edge 扩展 ZIP，在浏览器扩展页开启开发者模式并加载已解压扩展，从侧栏确认本地服务已连接。切换旧扩展前，先同步其中尚未同步的原始记录。</li>
         </ol>
@@ -79,7 +79,7 @@
     </main>
     <footer>
       <div class="brand footer-brand"><img src="./brand/synapse-mark.svg" alt="" width="38" height="38"><span><small>PERSONAL KNOWLEDGE COMPILER</small><strong>Synapse</strong></span></div>
-      <p>Preview 0.1.0 r1 · 候选版说明</p>
+      <p>Preview 0.1.0 r1 · 发行说明</p>
     </footer>
   </body>
 </html>
